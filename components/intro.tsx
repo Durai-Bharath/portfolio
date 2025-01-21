@@ -57,9 +57,11 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
       >
-    <span className="font-bold">Hello, I'm Bharath.</span> I'm a{" "}
-    <span className="font-bold">software developer</span> with a deep{" "}
-    <span className="italic">fascination for Programming and Maths</span>, driven by the joy of solving complex problems and building innovative solutions.
+        <span className="font-bold">Hello, I'm Bharath.</span> I'm a{" "}
+        <span className="font-bold">software developer</span> with a deep{" "}
+        <span className="font-normal">
+          fascination for Programming and Maths .
+        </span>
       </motion.h1>
 
       <motion.div
@@ -80,9 +82,9 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 group-hover:translate-x-2 transition" />
         </Link>
         <a
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="/CV.pdf"
           download
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 cursor-pointer borderBlack/10 transition text-gray-700 hover:text-gray-950 "
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />{" "}
@@ -90,14 +92,14 @@ export default function Intro() {
         <a
           href="https://www.linkedin.com/in/bharath-durai/"
           target="_blank"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 cursor-pointer borderBlack/10 hover:text-gray-950 transition"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 cursor-pointer borderBlack/10 hover:text-gray-950 transition dark:bg-white/10 dark:text-white/60"
         >
           <BsLinkedin />
         </a>
         <a
           href="https://github.com/Durai-Bharath"
           target="_blank"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 cursor-pointer borderBlack/10 hover:text-gray-950 transition"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 cursor-pointer borderBlack/10 hover:text-gray-950 transition dark:bg-white/10 dark:text-white/60"
         >
           <FaGithubSquare />
         </a>

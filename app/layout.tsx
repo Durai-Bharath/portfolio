@@ -3,6 +3,10 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Headers from "@/components/headers";
 import ActiveSectionContextProvider from "@/context/active-section";
+import { Toaster } from "react-hot-toast";
+import Footer from "@/components/footer";
+import ThemeSwitch from "@/components/theme-switch";
+import ThemeContextProvider from "@/context/theme-context";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
@@ -24,10 +28,15 @@ export default function RootLayout({
           {" "}
         </div>
         <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
-        <ActiveSectionContextProvider>
-          <Headers />
-          {children}
-        </ActiveSectionContextProvider>
+        <ThemeContextProvider>
+          <ActiveSectionContextProvider>
+            <Headers />
+            {children}
+            <Footer />
+            <Toaster position="top-right" />
+          </ActiveSectionContextProvider>
+          <ThemeSwitch />
+        </ThemeContextProvider>
       </body>
     </html>
   );
