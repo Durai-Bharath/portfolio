@@ -55,12 +55,19 @@ export default function Intro() {
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-xl font-medium !leading-[1.5] sm:text-2xl"
       >
         <span className="font-bold">Hello, I'm Bharath.</span> I'm a{" "}
-        <span className="font-bold">software developer</span> with a deep{" "}
+        <span className="font-bold">software developer</span> with a profound
+        passion{" "}
         <span className="font-normal">
-          fascination for Programming and Maths .
+          for{" "}
+          <span className="font-bold">
+            Artificial Intelligence and Machine Learning
+          </span>
+          . I am driven by the endless possibilities these technologies offer
+          and am deeply committed to exploring and contributing to their
+          advancement.
         </span>
       </motion.h1>
 
@@ -82,7 +89,7 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 group-hover:translate-x-2 transition" />
         </Link>
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          className="group  bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="/CV.pdf"
           download
         >
