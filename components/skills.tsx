@@ -3,8 +3,7 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
-import { animate, motion } from "framer-motion";
-import { init } from "next/dist/compiled/webpack/webpack";
+import {  motion } from "framer-motion";
 
 const fadeInAnimationVariants = {
   initial: {
