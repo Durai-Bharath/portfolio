@@ -7,6 +7,7 @@ import { Toaster } from "react-hot-toast";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
+import ChatBotSwitch from "@/components/chatBot";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
@@ -35,6 +36,7 @@ export default function RootLayout({
             <Footer />
             <Toaster position="top-right" />
           </ActiveSectionContextProvider>
+          <ChatBotSwitch/>
           <ThemeSwitch />
         </ThemeContextProvider>
       </body>
