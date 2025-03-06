@@ -3,7 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import mri from "@/public/mri.png";
 import farmer from "@/public/farmer.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import talentScout from "@/public/talentScout.png";
 import vehicle from "@/public/vehicle.png";
 import hall from "@/public/hall.png";
 
@@ -79,12 +79,12 @@ export const projectsData = [
     imageUrl: farmer,
   },
   {
-    title: "Word Prediction",
+    title: "TalentScout",
     description:
-      "To accurately predict the next word in a sequence, enhancing text input efficiency.",
-    tags: ["LSTM", "N-Gram", "NLTK"],
-    imageUrl: wordanalyticsImg,
-    projectUrl: "https://github.com/Durai-Bharath/Word-Prediction-using-LSTM",
+      "An AI-powered screening chatbot that dynamically generates skill-based interview questions and evaluates responses in real-time.",
+    tags: ["LLM", "Vector Similarity", "SQLite", "Streamlit", "Python"],
+    imageUrl: talentScout,
+    projectUrl: "https://talentscout-testing.streamlit.app/",
   },
   {
     title: "Vehicle Speed Detection System",
@@ -106,16 +106,15 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "Tensorflow",
-  "keras",
-  "sklearn",
+  "TensorFlow",
+  "Keras",
+  "scikit-learn",
   "PyTorch",
-  "Weka",
-  "Orange",
-  "Tableau",
+  "MLFlow",
+  "OpenCV",
   "Python",
   "Flutter",
-  "CV2",
+  "Dart",
   "HTML",
   "CSS",
   "JavaScript",
@@ -123,15 +122,15 @@ export const skillsData = [
   "React",
   "Next.js",
   "Node.js",
+  "Express.js",
   "Git",
-  "R",
   "MongoDB",
-  "Neo4j",
-  "Cassandra",
-  "Express",
   "PostgreSQL",
+  "SQLite",
+  "Apache Spark",
+  "PySpark",
   "Hadoop",
-  "kafka",
+  "Kafka",
   "Docker",
   "Postman",
   "Tailwind CSS",
@@ -139,4 +138,13 @@ export const skillsData = [
   "Spring Boot",
   "Hibernate",
   "AWS",
+  "LangChain",
+  "Vector Databases (FAISS, ChromaDB)",
+  "LLM Fine-tuning",
+  "NLP",
+  "Data Analysis",
+  "Machine Learning",
+  "Deep Learning",
+  "Computer Vision",
+  "Recommendation Systems",
 ] as const;
