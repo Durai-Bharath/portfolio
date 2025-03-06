@@ -7,7 +7,7 @@ import { Toaster } from "react-hot-toast";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
-import ChatBotSwitch from "@/components/chatBot";
+import ChatBotSwitch from "@/components/chatBotButton";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
