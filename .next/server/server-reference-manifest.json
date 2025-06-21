@@ -1,0 +1,17 @@
+{
+  "node": {
+    "7fd5b0524af84e8545850dfa12229d62d35d886cbe": {
+      "workers": {
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/actions/sendEmail.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "NCVt94WZbz4WN7n+Z/xpuiM0tf9bn1jxlDpydR4+S84="
+}

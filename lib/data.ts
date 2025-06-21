@@ -36,6 +36,14 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "AI/ML Engineer",
+    location: "Chennai, Tamilnadu, India",
+    description:
+      "Currently employed as an AI/ML Engineer at Annz Technology, contributing to the development and deployment of intelligent solutions.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2025-Present",
+  },
+  {
     title: "Software Engineer",
     location: "Chennai, Tamilnadu, India",
     description:
@@ -106,45 +114,50 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "TensorFlow",
-  "Keras",
-  "scikit-learn",
-  "PyTorch",
-  "MLFlow",
-  "OpenCV",
-  "Python",
-  "Flutter",
-  "Dart",
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Express.js",
-  "Git",
-  "MongoDB",
-  "PostgreSQL",
-  "SQLite",
-  "Apache Spark",
-  "PySpark",
-  "Hadoop",
-  "Kafka",
-  "Docker",
-  "Postman",
-  "Tailwind CSS",
-  "Kubernetes",
-  "Spring Boot",
-  "Hibernate",
-  "AWS",
-  "LangChain",
-  "Vector Databases (FAISS, ChromaDB)",
-  "LLM Fine-tuning",
-  "NLP",
-  "Data Analysis",
+  // Core AI/ML
   "Machine Learning",
   "Deep Learning",
+  "Natural Language Processing (NLP)",
   "Computer Vision",
   "Recommendation Systems",
+  "LLM Fine-tuning",
+  "RAG (Retrieval-Augmented Generation)",
+
+  // AI/ML Frameworks
+  "TensorFlow",
+  "PyTorch",
+  "Keras",
+  "scikit-learn",
+  "OpenCV",
+
+  // LLM & Vector Tools
+  "LangChain",
+  "LangGraph",
+  "Vector Databases (FAISS, ChromaDB)",
+
+  // Programming Languages
+  "Python",
+  "Dart",
+  "JavaScript",
+  "TypeScript",
+
+  // Web & Cross-Platform Development
+  "Flutter",
+  "React",
+  "Node.js",
+  "Express.js",
+  "HTML",
+  "CSS",
+
+  // Databases
+  "PostgreSQL",
+  "MongoDB",
+  "SQLite",
+
+  // DevOps & Tools
+  "Git",
+  "Postman",
+  "AWS",
+  "Hadoop"
 ] as const;
+
