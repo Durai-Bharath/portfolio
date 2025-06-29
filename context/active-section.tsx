@@ -32,7 +32,7 @@ export default function ActiveSectionContextProvider({
   );
 }
 
-export function useActiveSectionContext() {
+export function useActiveSectionContext() : ActiveSectionContextType {
   const context = useContext(ActiveSectionContext);
   if (context === null) {
     throw new Error(

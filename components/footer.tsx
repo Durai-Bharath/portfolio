@@ -2,12 +2,16 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="text-center text-gray-500 mb-10 px-4">
-      <small className="mb-2 block text-xs">&copy; No rights reserved</small>
-      <p className="text-xs">
-        <span className="font-semibold">About this website:</span>built with React & Next.js , TypeScript
-        , Tailwind CSS , Framer Motion , React Email & Resend , Vercel Hosting
-      </p>
+    <footer className="mt-16 py-8 border-t border-gray-200 dark:border-gray-700">
+      <div className="max-w-4xl mx-auto px-4 text-center">
+        <div className="flex items-center justify-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+          <span>© {new Date().getFullYear()}</span>
+          <span className="w-1 h-1 bg-current rounded-full"></span>
+          <span>Bharath Durai</span>
+          <span className="w-1 h-1 bg-current rounded-full"></span>
+          <span>Crafted with care</span>
+        </div>
+      </div>
     </footer>
   );
 }

@@ -1,17 +1,18 @@
 import React from "react";
-import { useFormStatus } from "react-dom";
 import { FaPaperPlane } from "react-icons/fa";
 
-export default function SubmitButton() {
-  const { pending } = useFormStatus();
+interface SubmitButtonProps {
+  isSubmitting?: boolean;
+}
 
+export default function SubmitButton({ isSubmitting = false }: SubmitButtonProps) {
   return (
     <button
       className="group flex items-center justify-center h-[3rem] w-[8rem] gap-[0.3rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 active:scale-105 hover:bg-gray-950 disable:scale-100 dark:bg-white dark:bg-opacity-10 disabled:bg-opacity-65"
       type="submit"
-      disabled={pending}
+      disabled={isSubmitting}
     >
-      {pending ? (
+      {isSubmitting ? (
         <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white"></div>
       ) : (
         <>
