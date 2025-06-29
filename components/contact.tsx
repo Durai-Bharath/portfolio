@@ -69,7 +69,7 @@ export default function Contact() {
       id="contact"
       className="mb-20 sm:mb-28 max-w-[75rem] text-center"
     >
-      <SectionHeading>Let's Collaborate</SectionHeading>
+      <SectionHeading>Let&apos;s Collaborate</SectionHeading>
       
       <motion.p
         initial={{ opacity: 0, y: 20 }}

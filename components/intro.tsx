@@ -10,7 +10,6 @@ import { HiDocumentText } from "react-icons/hi";
 import { LuBrain } from "react-icons/lu";
 import { BiChip } from "react-icons/bi";
 import { useSectionInView } from "@/lib/hooks";
-import { useActiveSectionContext } from "@/context/active-section";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
