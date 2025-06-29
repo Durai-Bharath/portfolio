@@ -20,12 +20,12 @@ export default function Contact() {
       if (result.error) {
         toast.error(result.error);
       } else {
-        toast.success("Message sent successfully! I'll get back to you soon.");
+        toast.success("Message sent successfully! I&apos;ll get back to you soon.");
         // Reset form
         const form = document.querySelector('form') as HTMLFormElement;
         if (form) form.reset();
       }
-    } catch (error) {
+    } catch {
       toast.error("Something went wrong. Please try again.");
     } finally {
       setIsSubmitting(false);
@@ -78,7 +78,7 @@ export default function Contact() {
         className="text-gray-700 dark:text-gray-300 text-lg mb-12 max-w-3xl mx-auto leading-relaxed"
       >
         Open to collaborations on research, product development, or innovative tech initiatives.  
-        I’m always eager to connect, exchange ideas, and build impactful solutions together.
+        I&apos;m always eager to connect, exchange ideas, and build impactful solutions together.
       </motion.p>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -94,8 +94,8 @@ export default function Contact() {
               Get In Touch
             </h3>
             <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-              Whether you're interested in research collaboration, discussing AI/ML projects, 
-              or exploring opportunities in intelligent systems, I'd love to hear from you.
+              Whether you&apos;re interested in research collaboration, discussing AI/ML projects, 
+              or exploring opportunities in intelligent systems, I&apos;d love to hear from you.
             </p>
           </div>
 
@@ -269,7 +269,7 @@ export default function Contact() {
           Ready to Build Something Amazing?
         </h3>
         <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-2xl mx-auto">
-          Let's combine our expertise to create intelligent solutions that make a real difference. 
+          Let&apos;s combine our expertise to create intelligent solutions that make a real difference. 
           From research breakthroughs to production systems, every great project starts with a conversation.
         </p>
         <div className="flex flex-wrap justify-center gap-4">

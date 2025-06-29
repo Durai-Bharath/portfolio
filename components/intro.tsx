@@ -14,7 +14,6 @@ import { useActiveSectionContext } from "@/context/active-section";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
-  const { setActiveSection, SetTimeOfLastClick } = useActiveSectionContext();
   const [isMounted, setIsMounted] = useState(false);
   const [neuralConnections, setNeuralConnections] = useState<Array<{id: number, x2: number, y2: number}>>([]);
 
@@ -183,7 +182,7 @@ export default function Intro() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 1 }}
             >
-              Exploring Intelligence, Driven by the Question "Why"
+              Exploring Intelligence, Driven by the Question &ldquo;Why&rdquo;
               </motion.span>
           </motion.h1>
 

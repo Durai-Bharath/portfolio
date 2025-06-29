@@ -1,6 +1,6 @@
 "use client";
 import { projectsData } from "@/lib/data";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import { FiExternalLink, FiGithub, FiArrowRight, FiZap, FiTarget } from "react-icons/fi";
 
@@ -11,7 +11,6 @@ export default function Project({
   description,
   longDescription,
   tags,
-  projectUrl,
   codeUrl,
   liveUrl,
   imageUrl,
