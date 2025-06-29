@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import ActiveSectionContextProvider from "@/context/active-section";
 import { Toaster } from "react-hot-toast";
@@ -42,6 +43,25 @@ export default function RootLayout({
         <ThemeContextProvider>
           <ThemeSwitch />
         </ThemeContextProvider>
+
+        {/* Chatling chatbot integration */}
+        <Script
+          id="chatling-config"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.chtlConfig = { 
+                chatbotId: "4814696194",
+              };
+            `,
+          }}
+        />
+        <Script
+          src="https://chatling.ai/js/embed.js"
+          data-id="4814696194"
+          id="chtl-script"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
