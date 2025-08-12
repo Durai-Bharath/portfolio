@@ -49,6 +49,7 @@ export default function Contact() {
       href: "https://www.linkedin.com/in/bharath-durai/",
       color: "from-blue-600 to-blue-700"
     },
+    
     {
       icon: FiGithub,
       title: "GitHub",
