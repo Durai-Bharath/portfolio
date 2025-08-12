@@ -234,7 +234,7 @@ export default function Intro() {
           >
             {[
               { href: "https://www.linkedin.com/in/bharath-durai/", icon: BsLinkedin, label: "LinkedIn" },
-              { href: "https://github.com/bharath-profile", icon: FaGithubSquare, label: "GitHub" },
+              { href: "https://github.com/Durai-Bharath", icon: FaGithubSquare, label: "GitHub" },
               { href: "https://leetcode.com/u/BharathDurai/", icon: SiLeetcode, label: "LeetCode" },
               { href: "https://www.kaggle.com/duraibharath", icon: FaKaggle, label: "Kaggle" },
               { href: "/bharath-resume-june-2025.pdf", icon: HiDocumentText, label: "Resume" } // Add your resume link here
