@@ -233,7 +233,7 @@ export default function Intro() {
             className="flex justify-center gap-4 mt-8"
           >
             {[
-              { href: "https://linkedin.com/in/bharath-profile", icon: BsLinkedin, label: "LinkedIn" },
+              { href: "https://www.linkedin.com/in/bharath-durai/", icon: BsLinkedin, label: "LinkedIn" },
               { href: "https://github.com/bharath-profile", icon: FaGithubSquare, label: "GitHub" },
               { href: "https://leetcode.com/u/BharathDurai/", icon: SiLeetcode, label: "LeetCode" },
               { href: "https://www.kaggle.com/duraibharath", icon: FaKaggle, label: "Kaggle" },
